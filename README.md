@@ -1,8 +1,7 @@
 # Croûte
-Livecode test library for Levure that may resemble jest a bit
+Livecode test library for Levure that may resemble jest a bit. Let's see where this goes...
 
-Let's see where this goes...
-Croûte translated from French is crust. In keeping with Levure's bread && french idea, I thought croûte is a fitting name for a test library -- a key ingredient to a loaf of bread is yeast but it's nothing without a great crust! As you're baking your App, make sure you have a great crust (tests)!
+Croûte translated from French is crust. In keeping with Levure's bread and french theme, I thought croûte is a fitting name for a test library -- a key ingredient to a loaf of bread is yeast. A loaf of bread is only as good as it's crust! As you're baking your App, make sure you have a great crust (tests)!
 
 Croûte is a testing framework written for Livecode intended for use as a Levure helper. The initial work essentially takes Trevore Devore's testing code for Levure. I'd like to see if we can have more of a BDD style to the project so I'm heading in a direction to make this look like jest. If you don't know what jest is don't worry. If you do, notice I said "look like".
 
@@ -69,7 +68,9 @@ In this code, 2+2 is evaluated with the result being 4. The match "toBe" then co
 You can also test the opposite of a matcher:
   
 ```
-test "adding positive numbers is not zero", "testForPositive"
+...
+  test "adding positive numbers is not zero", "testForPositive"
+...
   
 command testForPositive
   repeat with a = 1 to 10
