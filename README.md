@@ -20,7 +20,7 @@ Create a test and execute it:
 
 What we expect the test to do:
 
-`expect(exp1, Matcher, exp2)`
+`expect(exp1, "[MATCHER]", exp2)`
 
 Matchers are:
 
@@ -59,7 +59,7 @@ This is the simplest way to test a value
 ...
   
 command twoPlusTwoIsFour
-  expect(2+2, toBe, 4)
+  expect(2+2, "toBe", 4)
 end twoPlusTwoIsFour
 ```
   
@@ -75,7 +75,7 @@ You can also test the opposite of a matcher:
 command testForPositive
   repeat with a = 1 to 10
     repeat with b = 1 to 10
-      expect(a+b, not.toBe, 0)
+      expect(a+b, "not.toBe", 0)
     end repeat
   end repeat
 end testForPositive
