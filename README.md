@@ -55,7 +55,9 @@ Matchers are:
 This is the simplest way to test a value
   
 ```
-test "two plus two is four", "twoPlusTwoIsFour"
+...
+  test "two plus two is four", "twoPlusTwoIsFour"
+...
   
 command twoPlusTwoIsFour
   expect(2+2, toBe, 4)
