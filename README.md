@@ -2,21 +2,29 @@
 Livecode test library for Levure that may resemble jest a bit
 
 Let's see where this goes...
-Croûte translated from French is crust. In keeping with Levure's french theme, I thought croûte is a fitting name for a test library -- a loaf of bread is nothing without a great crust!
+Croûte translated from French is crust. In keeping with Levure's bread && french idea, I thought croûte is a fitting name for a test library -- a key ingredient to a loaf of bread is yeast but it's nothing without a great crust! As you're baking your App, make sure you have a great crust (tests)!
 
-This is a testing framework written for Livecode intended to be used as a Levure helper. The initial work essentially takes what Trevore Devore's testing code is for Levure. I'd like to see if we can have more of a BDD style to the project so I'm heading in a direction to make this look like jest. If you don't know what jest is don't worry. If you do, notice I said "look like".
+Croûte is a testing framework written for Livecode intended for use as a Levure helper. The initial work essentially takes Trevore Devore's testing code for Levure. I'd like to see if we can have more of a BDD style to the project so I'm heading in a direction to make this look like jest. If you don't know what jest is don't worry. If you do, notice I said "look like".
 
 ### Project Status
-As you can see, there is really nothing here yet. I'm working on an initial commit that will essentially be what is included in current Levure framework for testing. I'll expand off of that once I get going.
+As you can see, there is really nothing here yet. I'm working on an initial commit that will essentially be what is included in the current Levure framework for testing. I'll expand off of that once I get going.
 
 ### Using Croûte
-`describe name, fn`
+
+Start a batch of related tests:
+
+`describe name, fn`  
+
+Create a test and execute it:
 
 `test name, fn`
+
+What we expect the test to do:
 
 `expect(exp1, Matcher, exp2)`
 
 Matchers are:
+
   `toBe` (tbd)
   
   `toEqual` (tbd)
